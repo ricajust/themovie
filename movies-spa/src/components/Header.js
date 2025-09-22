@@ -1,3 +1,10 @@
+import { Link } from "react-router-dom";
+
 export function Header() {
-    return <h1> Aplicacao de filmes</h1>
+    return (
+        <><h1>Aplicacao de filmes</h1><ul>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/movies"}>Movies</Link></li>
+        </ul></>
+    )
 }
